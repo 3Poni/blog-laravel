@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('plugins/111/assets/vendors/slick-carousel/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/111/assets/vendors/slick-carousel/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/111/assets/css/style.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <script src="{{ asset('plugins/111/assets/vendors/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('plugins/111/assets/js/loader.js') }}"></script>
     <!-- CSRF Token -->
@@ -73,69 +73,20 @@
                             <img src="{{ asset('plugins/111/assets/images/search.svg') }}" alt="search">
                         </a>
                     </li>
-                    <li class="nav-item ml-5">
-                        <a class="nav-link pr-0 nav-link-btn" href="#!" data-toggle="offCanvasMenu">
-                            <img src="{{ asset('plugins/111/assets/images/social icon@2x.svg') }}" alt="social-nav-toggle">
-                        </a>
-                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-
 <div class="container">
     @yield('content')
 </div>
 <footer class="oleez-footer wow fadeInUp">
     <div class="container">
-        <div class="footer-content">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 footer-widget-text">
-                            <h6 class="widget-title">PHONE</h6>
-                            <p class="widget-content">8 800 555 35 35</p>
-                        </div>
-                        <div class="col-md-6 footer-widget-text">
-                            <h6 class="widget-title">EMAIL</h6>
-                            <p class="widget-content">NIKO-LUIS@yandex.ru</p>
-                        </div>
-                        <div class="col-md-6 footer-widget-text">
-                            <h6 class="widget-title">Адрес</h6>
-                            <p class="widget-content">г. Иркутск <br> Российская Федерация</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-text">
-            <p class="mb-0">Текст для футера, возможно стоит прикрепить ссылку.</p>
+            <p class="mb-0">Текст для футера</p>
         </div>
     </div>
 </footer>
-<!-- Off canvas social menu -->
-<nav id="offCanvasMenu" class="off-canvas-menu">
-    <button type="button" class="close" aria-label="Close" data-dismiss="offCanvasMenu">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <ul class="oleez-social-menu">
-        <li>
-            <a href="#!" class="oleez-social-menu-link">Facebook</a>
-        </li>
-        <li>
-            <a href="#!" class="oleez-social-menu-link">Instagram</a>
-        </li>
-        <li>
-            <a href="#!" class="oleez-social-menu-link">Behance</a>
-        </li>
-        <li>
-            <a href="#!" class="oleez-social-menu-link">Dribbble</a>
-        </li>
-        <li>
-            <a href="#!" class="oleez-social-menu-link">Email</a>
-        </li>
-    </ul>
-</nav>
 <!-- Full screen search box -->
 <div id="searchModal" class="search-modal">
     <button type="button" class="close" aria-label="Close" data-dismiss="searchModal">
