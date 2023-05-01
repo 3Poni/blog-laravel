@@ -1,4 +1,4 @@
-#About
+# About
 
 This is a blog (study-project)
 
