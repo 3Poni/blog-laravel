@@ -8,6 +8,7 @@ Download this repository, extract
 From extraction folder RUN this command:
 
 ```bash
+composer update
 docker-compose up -d
 ```
 ## Running with NO Docker
