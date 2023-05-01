@@ -20,9 +20,9 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+{{--    <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">--}}
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
+{{--    <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">--}}
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
 </head>
@@ -37,6 +37,9 @@
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="{{ route('admin.main.index') }}" class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="/" class="nav-link">Вернуться на сайт</a>
             </li>
         </ul>
         <ul class="navbar-nav mr-3">
@@ -108,9 +111,9 @@
 <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
 <!-- ChartJS -->
-<script src="{{asset ('plugins/chart.js/Chart.min.js')}}"></script>
+{{--<script src="{{asset ('plugins/chart.js/Chart.min.js')}}"></script>--}}
 <!-- Sparkline -->
-<script src="{{asset ('plugins/sparklines/sparkline.js')}}"></script>
+{{--<script src="{{asset ('plugins/sparklines/sparkline.js')}}"></script>--}}
 <!-- JQVMap -->
 <script src="{{asset ('plugins/jqvmap/jquery.vmap.min.js')}}"></script>
 <script src="{{asset ('plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
@@ -119,13 +122,13 @@
 <!-- daterangepicker -->
 <script src="{{asset ('plugins/moment/moment.min.js')}}"></script>
 <script src="{{asset ('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
-<script src="{{asset ('plugins/daterangepicker/daterangepicker.js')}}"></script>
+{{--<script src="{{asset ('plugins/daterangepicker/daterangepicker.js')}}"></script>--}}
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="{{asset ('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 <!-- Summernote -->
 <script src="{{asset ('plugins/summernote/summernote-bs4.min.js')}}"></script>
 <!-- overlayScrollbars -->
-<script src="{{asset ('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+{{--<script src="{{asset ('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>--}}
 <!-- AdminLTE App -->
 <script src="{{asset ('dist/js/adminlte.js')}}"></script>
 <script>

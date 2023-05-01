@@ -22,14 +22,14 @@
 <div class="oleez-loader"></div>
     <header class="oleez-header">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="{{ asset('plugins/111/assets/images/4444.png') }}" alt="Oleez"></a>
+            <a class="navbar-brand" href="/"><img src="{{ asset('plugins/111/assets/images/4444.png') }}" alt="Oleez"></a>
             <div class="collapse navbar-collapse" id="oleezMainNav">
                 <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">О нас</a>
+                        <a class="nav-link" href="/about">О проекте</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#!" id="pagesDropdown" data-toggle="dropdown"
@@ -41,6 +41,11 @@
                                 @endauth
                         </div>
                     </li>
+                        @auth
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('personal.main.index') }}">Личный кабинет</a>
+                            </li>
+                        @endauth
                 </ul>
                 <ul class="navbar-nav d-none d-lg-flex">
                     @if (Route::has('login'))
@@ -48,9 +53,11 @@
                             <li class="nav-item">
                                 <a  class=" nav-link btn btn-warning " href="{{ route('personal.article.create') }}">Создать статью</a>
                             </li>
+                            @if(Auth::user()['role'] === 0)
                             <li class="pl-3 nav-item">
-                                <a class="nav-link btn btn-warning" href="{{ route('personal.main.index') }}">Личный кабинет</a>
+                                <a class="nav-link btn btn-warning" href="{{ route('admin.main.index') }}">Меню администратора</a>
                             </li>
+                            @endif
                             <li class="pl-3 nav-item">
                                 <form action="{{ route('logout') }}" method="post">
                                     @csrf
@@ -80,13 +87,7 @@
 <div class="container">
     @yield('content')
 </div>
-<footer class="oleez-footer wow fadeInUp">
-    <div class="container">
-        <div class="footer-text">
-            <p class="mb-0">Текст для футера</p>
-        </div>
-    </div>
-</footer>
+
 <!-- Full screen search box -->
 <div id="searchModal" class="search-modal">
     <button type="button" class="close" aria-label="Close" data-dismiss="searchModal">
