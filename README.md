@@ -8,9 +8,11 @@ Download this repository, extract
 From extraction folder RUN this command:
 
 ```bash
-composer update
-docker-compose up -d
+docker-compose up
 ```
+
+Wait until all the packages are installed and php-fpm is run
+
 ## Running with NO Docker
 Download this repository, extract
 
@@ -22,9 +24,11 @@ php artisan storage:link
 php artisan serve
 ```
 
+Notice: don't forget to set up an env file
+
 ## Usage
 
-App is avalaible at:
+By default app is avalaible at:
 
 ```
 http://127.0.0.1:8000/
