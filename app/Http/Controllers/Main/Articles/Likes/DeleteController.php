@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Personal\Likes;
+namespace App\Http\Controllers\Main\Comments;
 
 use App\Http\Controllers\Controller;
 use App\Models\Articles;
