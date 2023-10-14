@@ -11,7 +11,7 @@ From extraction folder RUN this command:
 docker-compose up
 ```
 
-Wait until all the packages are installed and php-fpm is run
+Wait until all the packages are installed and php-fpm is running
 
 ## Running with NO Docker
 Download this repository, extract
